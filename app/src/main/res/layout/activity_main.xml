@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:background="@color/white"
+        android:numeric="integer"
+        android:textAlignment="center"
+        android:id="@+id/etInput1"
+        android:layout_width="198dp"
+        android:layout_height="45dp"
+        android:hint="Enter Number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="400dp"
+      />
+    <EditText
+        android:background="@color/white"
+
+        android:numeric="integer"
+        android:textAlignment="center"
+        android:id="@+id/etInput2"
+        android:layout_width="198dp"
+        android:layout_height="45dp"
+android:hint="Enter Second Number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="200dp"
+        />
+
+    <LinearLayout
+        android:showDividers="middle"
+        android:divider="@drawable/empty_tall_divider"
+        android:id="@+id/allButtons"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="horizontal"
+        android:paddingLeft="16.0dip"
+        android:paddingTop="5.0dip"
+        android:paddingRight="16.0dip"
+        android:paddingBottom=".0dip"
+        android:paddingHorizontal="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etInput1">
+
+        <Button
+            android:id="@+id/plusButton"
+            android:layout_width="0.0dip" android:layout_height="fill_parent"
+            android:text="+"
+            android:layout_weight="0.75" />
+
+        <Button
+            android:id="@+id/minusButton"
+            android:layout_width="0.0dip" android:layout_height="fill_parent"
+            android:text="-"
+
+            android:layout_weight="0.75" />
+        <Button
+            android:id="@+id/divideButton"
+            android:layout_width="0.0dip" android:layout_height="fill_parent"
+            android:text="/"
+            android:layout_weight="0.75" />
+
+        <Button
+            android:id="@+id/multiplyButton"
+            android:layout_width="0.0dip" android:layout_height="fill_parent"
+            android:text="*"
+            android:layout_weight="0.75" />
+
+    </LinearLayout>
+<LinearLayout
+
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="@id/allButtons"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textSize="18dp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/tvResultLabel"
+        android:text="Result: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/tvResult"
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
